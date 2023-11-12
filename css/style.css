@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Be+Vietnam+Pro:wght@400;500;700&family=Wavefont:wght@200&display=swap');
+
+:root{
+    /*Colores primarios*/
+    --rojo-brillante:rgb(242, 95, 58);
+    --azul-oscuro:rgb(35, 44, 81);
+
+    /*Colores Neutros*/
+    --azul-grisaceo-oscuro:rgb(143, 148, 167);
+    --azul-muy-oscuro:rgb(29, 30, 37);
+    --rojo-muy-palido: rgb(255, 239, 234);
+    --variante-gris-claro:rgb(249, 249, 249);
+}
+
+body{
+    background-image: url(../img/bg-tablet-pattern.svg),url(../img/bg-tablet-pattern.svg);
+    background-size: 100%,80%;
+    background-repeat: no-repeat,no-repeat;
+    background-position: 7vh -15vw,50vh 140vw;
+}
+
+*{
+    font-family: 'Be Vietnam Pro';
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    list-style: none;
+}
+
+h1{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--azul-oscuro);
+}
+
+h2{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--azul-oscuro);
+}
+
+h3{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--azul-oscuro);
+}
+
+p{
+    font-size: 1rem;
+    color: var(--azul-grisaceo-oscuro);
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+}
+
+    header img.logo{
+        height: 4vh;
+    }
+
+    header .menu-main{
+        display: none;
+    }
+
+    header .btn-menu{
+        background-image: url(../img/icon-hamburger.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 7vw;
+        height: 4vh;
+    }
+
+        .btn-menu:active{
+            background-image: url(../img/icon-close.svg);
+        }
+
+    header .btn-start{
+        display: none;
+    }
+
+.banner, .opinions, .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+}
+
+.opinions, .info{
+    align-items: center;
+}
+
+#low.banner{
+    background-image: url(../img/bg-simplify-section-mobile.svg);
+    background-color: var(--rojo-brillante);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+    #low.banner h2{
+        color: var(--variante-gris-claro);
+    }
+    
+
+.section-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin: 2rem 1.75rem 3rem;
+}
+
+.btn-start, .btn-start-inv, .num{
+    background-color: var(--rojo-brillante);
+    color: var(--variante-gris-claro);
+    font-weight: 500;
+    font-size: 0.75rem;
+    padding: 0.9rem 1.75rem;
+    border-radius: 2rem;
+    border: 0px;
+
+    box-shadow: 0 0.3rem 1rem rgba(242, 95, 58, 0.5);
+}
+
+    .num{
+        font-size: 1rem;
+        position: relative;
+        left: -0.5rem;
+        padding: 0.5rem 1.5rem;
+        box-shadow: unset;
+    }
+
+    .btn-start-inv{
+        background-color: var(--variante-gris-claro);
+        color: var(--rojo-brillante);
+        box-shadow: 0 0.3rem 1rem rgba(35, 44, 81, 0.2);
+    }
+
+    .btn-start:active, .btn-start-inv:active{
+        opacity: 0.9;
+    }
+
+.section-el, .elem{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 0.75rem;
+}
+
+    .elem h3{
+        text-align: left;
+        background-color: var(--rojo-muy-palido);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+   
+.op-card{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+    
+    .op-card h3{
+        margin: 1rem;
+    }
+
+    #left.op-card, #right.op-card{
+        display: none;
+    }
+    
+.card-head{
+    position: relative;
+    height: 70px;
+}
+    
+    .card-head img{
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+.card-text{
+    padding: 1.5rem;
+    padding-top: 5rem;
+    background-color: var(--variante-gris-claro);
+    text-align: center;
+}
+    
+footer{
+    background-color: var(--azul-muy-oscuro);
+    padding: 4rem 1rem 2rem;
+    text-align: center;
+}
+
+    footer p{
+        order: -1;
+    }
+    
+    #third.col form {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+    
+    #third.col form input#mail{
+        padding: 1rem 5rem 1rem 1rem;
+        font-size: 0.75rem;
+        border-radius: 2rem;
+        border: 0;
+        color: var(--azul-grisaceo-oscuro);
+        box-shadow: 0 0.3rem 1rem rgba(143, 148, 167, 0.2)
+    }
+
+    #third.col form .btn-start{
+        box-shadow: 0 0.3rem 1rem rgba(143, 148, 167, 0.2)
+    }
+    
+    #second.col{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #second.col ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 0 2.5rem;
+        margin-bottom: 2rem;
+        align-items: flex-start;
+    }
+    
+    #second.col ul a{
+        color:var(--variante-gris-claro);
+        font-weight: 400;
+        font-size: 0.9rem;
+    }
+        #second.col ul a:active{
+            color: var(--rojo-brillante);
+        }
+    
+    #first.col .redes{
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem 0;
+    }
+    
+    #first.col .redes img{
+        width: 2rem;
+    }
+    
+    #first.col img.logo{
+        margin: 2rem;
+    }
+
+    
+
+@media (min-width:1440px){
+    h1{
+        font-size: 3.25rem;
+    }
+    
+    h2{
+        font-size: 2.75rem;
+    }
+    
+    h3{
+        font-size: 1.5rem;
+    }
+
+    .btn-start, .btn-start-inv, .num{
+        font-size: 1rem;
+        padding: 1.2rem 2rem;
+    }
+
+    body{
+        background-size: 60%,60%;
+        background-position: 55vw -30vh, -40vw 100vh;
+    }
+
+    header{
+        padding: 4rem 10rem;
+    }
+
+    header .btn-menu{
+        display: none;
+    }
+
+    header .menu-main{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+    }
+        .menu-main a{
+            color: var(--azul-muy-oscuro);
+            font-weight: 500;
+        }
+
+        .menu-main a:active{
+            color:var(--azul-grisaceo-oscuro);
+        }
+
+    header .btn-start{
+        display: inline-block;
+    }
+
+    .banner{
+        flex-direction: row-reverse;
+        padding: 0 10rem;
+        margin-top: 6rem;
+    }
+
+    #low.banner{
+        background-image: url(../img/bg-simplify-section-desktop.svg);
+        background-size: cover;
+        padding: 3rem 6rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5rem;
+        margin-top: 10rem;
+    }
+
+    #low.banner h2{
+        text-align: left;
+        width: 50%;
+    }
+    .section-desc{
+        align-items: start;
+        justify-content: center;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .info{
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 5rem;
+        padding: 0 10rem;
+        margin-top: 6rem;
+    }
+    
+    .elem h3{
+        background-color:unset;
+    }
+
+    .opinions{
+        margin-top: 6rem;
+    }
+
+    .test{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #left.op-card, #right.op-card{
+        display: flex;
+    }
+
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 4rem 6rem;;
+    align-items: flex-start;
+    position: relative;
+}
+
+        footer p{
+            position: absolute;
+            right: 6rem;
+            bottom: 3rem;
+        }
+
+    #first.col{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+        #first.col img.logo{
+            margin: 0;
+        }
+
+        #first.col .redes{
+            gap: 1rem;
+            margin-bottom: 0;
+        }
+
+        #first.col .redes img{
+            width: 100%;
+        }
+
+    #second.col{
+        gap: 5rem;
+    }
+        #second.col ul{
+            margin: 0;
+        }
+        
+    #third.col form{
+        gap: 1rem;
+    }
+        
+        #third.col form input#mail{
+            font-size: 1rem;
+        }
+    
+
+}
